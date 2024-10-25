@@ -1,4 +1,4 @@
-name: Buld, Test and Deploy
+name: Buld,Test and Deploy
 
 on:
   push:
