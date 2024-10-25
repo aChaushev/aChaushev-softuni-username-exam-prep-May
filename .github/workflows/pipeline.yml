@@ -43,7 +43,7 @@ jobs:
       run: npm run start &
     - name: Execute the UI tests
       run: npm run test:ui   
- 
+      
   deploy:
     needs: execute-ui-test
     runs-on: ubuntu-latest
@@ -53,4 +53,3 @@ jobs:
         with:
           service-id: ${{ secrets.SERVICE_KEY }}
           api-key: ${{ secrets.RENDER_API_KEY }}
-    
